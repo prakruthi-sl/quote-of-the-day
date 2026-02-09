@@ -15,7 +15,7 @@ A simple web application developed using HTML, CSS, and JavaScript that displays
 
 ## 🚀 How to Run
 1. Clone this repository  
-   git clone https://github.com/your-username/quote-of-the-day.git  
+   git clone https://github.com/prakruthi-sl/quote-of-the-day.git  
 2. Open the folder  
 3. Open `index.html` in your browser  
 
