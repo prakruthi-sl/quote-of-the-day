@@ -1,26 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quote of the Day</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quote of the Day</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="quote-box">
-  <div class="window-buttons">
-    <span class="red"></span>
-    <span class="yellow"></span>
-    <span class="green"></span>
+<div class="container">
+
+<h1 class="title">Quote of the Day</h1>
+
+<div class="card">
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="dots">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+    </div>
+
+    <div class="mode" onclick="toggleMode()">🌙</div>
   </div>
 
-  <h2>💡 Quote of the Day</h2>
+  <!-- Quote -->
+  <div class="quote-text">
+    <span class="quote-mark">“</span>
+    <p id="quote">Loading...</p>
+    <span class="quote-mark">”</span>
+  </div>
 
-  <p id="quote">Click the button to get a quote...</p>
-  <p id="author"></p>
+  <!-- Author + Copy -->
+  <div class="author">
+    <span id="author">- Author</span>
+    <span class="copy" onclick="copyQuote()">⧉</span>
+  </div>
 
-  <button onclick="newQuote()">New Quote</button>
+  <hr>
+
+  <!-- Buttons -->
+  <div class="buttons">
+    <button class="prev" id="prevBtn" onclick="prevQuote()">Previous</button>
+    <button class="next" onclick="newQuote()">New Quote</button>
+  </div>
+
+</div>
 </div>
 
 <script src="script.js"></script>
