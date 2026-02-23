@@ -1,4 +1,4 @@
-#📜 Quote of the Day Web App
+# 📜Quote of the Day Web App
 A simple and stylish Quote of the Day web application built using HTML, CSS, and JavaScript.
 It displays motivational and programming quotes with dark/light mode, next & previous navigation, and copy-to-clipboard feature. 
 
